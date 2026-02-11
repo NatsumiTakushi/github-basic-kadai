@@ -1,0 +1,44 @@
+takushinatsumi@takushinatsuminonotobukkukonpyuta work % mkdir git_challenge
+takushinatsumi@takushinatsuminonotobukkukonpyuta work % git init
+Reinitialized existing Git repository in /Users/takushinatsumi/Desktop/work/.git/
+takushinatsumi@takushinatsuminonotobukkukonpyuta work % cd git_challenge
+takushinatsumi@takushinatsuminonotobukkukonpyuta git_challenge % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /Users/takushinatsumi/Desktop/work/git_challenge/.git/
+takushinatsumi@takushinatsuminonotobukkukonpyuta git_challenge % touch hello_world.txt
+takushinatsumi@takushinatsuminonotobukkukonpyuta git_challenge % nano hello_world.txt
+takushinatsumi@takushinatsuminonotobukkukonpyuta git_challenge % git add hello_world.txt
+takushinatsumi@takushinatsuminonotobukkukonpyuta git_challenge % git commit -m "1回目のコミット"
+[master (root-commit) 52dbabc] 1回目のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+takushinatsumi@takushinatsuminonotobukkukonpyuta git_challenge % nano hello_world.txt
+takushinatsumi@takushinatsuminonotobukkukonpyuta git_challenge % git add hello_world.txt        
+takushinatsumi@takushinatsuminonotobukkukonpyuta git_challenge % git commit -m "2回目のコミット"
+[master 8b4e539] 2回目のコミット
+ 1 file changed, 1 insertion(+)
+takushinatsumi@takushinatsuminonotobukkukonpyuta git_challenge % git log
+commit 8b4e5397b0132fda8de5faeb5e5d05b7b5e86d29 (HEAD -> master)
+Author: NatsumiTakushi <natsumitakushi@gmail.com>
+Date:   Wed Feb 11 19:36:14 2026 +0900
+
+    2回目のコミット
+
+commit 52dbabc25c2ff2bfc9fbc88909adac33eaa39333
+Author: NatsumiTakushi <natsumitakushi@gmail.com>
+Date:   Wed Feb 11 19:35:32 2026 +0900
+
+    1回目のコミット
+takushinatsumi@takushinatsuminonotobukkukonpyuta git_challenge % cd ..
